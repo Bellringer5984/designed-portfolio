@@ -1,31 +1,3 @@
-// import React, { useState } from "react";
-// import { MdOutlineMenu } from "react-icons/md";
-
-// function MobileNav() {
-//   const [showDropdown, setShowDropDown] = useState(false);
-
-//   const toggleDropDown = () => {
-//     setShowDropDown(!showDropdown);
-//   };
-//   return (
-//       <div className=" flex justify-center w-full">
-//         <div className="flex  bg-black justify-between rounded-full px-10 py-4 w-11/12 m-2">
-//           <div className="flex justify-between  w-full">
-//             <div className="flex">
-//               <div className="bg-orange-600  rounded-full w-7 h-7"></div>
-//               <span className="text-white px-2 font-bold text-lg">Caleb</span>
-//             </div>
-//             <MdOutlineMenu
-//               name="menu"
-//               className="flex text-white bg-red text-3xl"
-//             />
-//           </div>
-//         </div>
-//       </div>
-//   );
-// }
-
-// export default MobileNav;
 
 import React, { FC, useState } from 'react';
 import { MdOutlineMenu } from 'react-icons/md';
