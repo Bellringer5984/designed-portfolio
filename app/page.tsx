@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="">
       <NavBar />
-      <Construction />
+      {/* <Construction /> */}
       {/* About */}
       {/* Portfolio */}
       {/* Why Me */}

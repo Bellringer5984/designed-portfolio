@@ -1,49 +1,28 @@
-import React from "react";
+'use client'
+import React, { FC, useEffect, useState } from "react";
+import DesktopNav from "./DesktopNav";
+import MobileNav from "./MobileNav";
 
-function NavBar() {
-  const lineItemClassName = "text-white px-10 hover:text-orange-500";
+const NavBar: React.FC = () => { 
+    // Use a conditional to check if window is defined
+    const [windowWidth, setWindowWidth] = useState(
+        typeof window !== "undefined" ? window.innerWidth : 1000
+    );
+    
+    useEffect(() => {
+        // Only attach the event listener if window is defined
+        if (typeof window !== "undefined") {
+            const handleResize = () => setWindowWidth(window.innerWidth);
+            window.addEventListener('resize', handleResize);
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
+        }
+    }, []);
+
   return (
     <div className="flex justify-center">
-      <div className="flex bg-black justify-between rounded-full px-10 py-4 w-11/12 m-2">
-        <ol className="flex ">
-          <li>
-            <a href="#" className={lineItemClassName}>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#" className={lineItemClassName}>
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#" className={lineItemClassName}>
-              Services
-            </a>
-          </li>
-        </ol>
-        <div className="flex">
-          <div className="bg-orange-600  rounded-full w-7 h-7"></div>
-          <span className="text-white px-2 font-bold text-lg">Caleb</span>
-        </div>
-        <ol className="flex">
-          <li>
-            <a href="#" className={lineItemClassName}>
-              Resume
-            </a>
-          </li>
-          <li>
-            <a href="#" className={lineItemClassName}>
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="#" className={lineItemClassName}>
-              Contact
-            </a>
-          </li>
-        </ol>
-      </div>
+        {windowWidth >= 1000 ? <DesktopNav /> : <MobileNav />}
     </div>
   );
 }
