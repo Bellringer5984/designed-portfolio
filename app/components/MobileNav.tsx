@@ -28,7 +28,7 @@ const MobileNav: FC = () => {
           <a href="#" onClick={toggleDropdown} className="block px-1 py-2">About</a>
           <a href="#" onClick={toggleDropdown} className="block px-1 py-2">Service</a>
           <a href="#" onClick={toggleDropdown} className="block px-1 py-2">Resume</a>
-          <a href="#" onClick={toggleDropdown} className="block px-1 py-2">Projects</a>
+          <a href="#" onClick={toggleDropdown} className="block px-1 py-2">Portfolio</a>
           <a href="#" onClick={toggleDropdown} className="block px-1 py-2">Contact</a>
         </div>
       )}

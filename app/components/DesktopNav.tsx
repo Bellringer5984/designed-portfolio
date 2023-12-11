@@ -2,7 +2,7 @@ import React from 'react'
 
 function DesktopNav() {
     
-  const lineItemClassName = "text-white px-10 hover:text-orange-500";
+  const lineItemClassName = "text-white px-10 hover:text-orange-500 transition-colors duration-300";
   return (
     <div className="flex bg-black justify-between rounded-full px-10 py-4 w-11/12 m-2">
         
@@ -35,7 +35,7 @@ function DesktopNav() {
       </li>
       <li>
         <a href="#" className={lineItemClassName}>
-          Projects
+          Portfolio
         </a>
       </li>
       <li>
