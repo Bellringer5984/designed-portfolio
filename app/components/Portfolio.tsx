@@ -4,7 +4,6 @@ import Image from "next/image";
 
 const Portfolio = () => {
   const projects = [
-    // Add your projects here
     {
       title: "Myoosik",
       description: "A social Media web app that connects like minded artists. ",
@@ -31,7 +30,6 @@ const Portfolio = () => {
       image: "/python2.png",
       link: "https://github.com/Bellringer5984/download_sorting",
     },
-    // More projects
   ];
 
   return (

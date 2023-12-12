@@ -14,15 +14,13 @@ const About = () => {
         </div>
         <div className="md:w-2/3 md:pl-10">
           <p className="text-lg">
-            {/* Insert your biography or introduction here */}
-            "Hello! I&apos;m Caleb Bellmyer, a dedicated software developer with a
-            strong focus on creating compelling and efficient web applications.
-            My expertise in Fullstack development is bolstered by a versatile
-            skill set in JavaScript, TypeScript, Python, and SQL. I am eager to
-            explore how my abilities can contribute to solving your company's
-            software development challenges.
+            "Hello! I&apos;m Caleb Bellmyer, a dedicated software developer with
+            a strong focus on creating compelling and efficient web
+            applications. My expertise in Fullstack development is bolstered by
+            a versatile skill set in JavaScript, TypeScript, Python, and SQL. I
+            am eager to explore how my abilities can contribute to solving your
+            company's software development challenges.
           </p>
-          {/* Add more content or paragraphs as needed */}
         </div>
       </div>
     </section>

@@ -1,9 +1,13 @@
+import React, { FC, useState } from "react";
+import { MdOutlineMenu } from "react-icons/md";
 
-import React, { FC, useState } from 'react';
-import { MdOutlineMenu } from 'react-icons/md';
-
-type SectionId = 'home' | 'about' | 'service' | 'portfolio' | 'resume' | 'contact';
-
+type SectionId =
+  | "home"
+  | "about"
+  | "service"
+  | "portfolio"
+  | "resume"
+  | "contact";
 
 const MobileNav: FC = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -13,7 +17,7 @@ const MobileNav: FC = () => {
   };
   const scrollToSection = (sectionId: SectionId) => {
     toggleDropdown();
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -25,23 +29,61 @@ const MobileNav: FC = () => {
             <span className="text-white px-2 font-bold text-lg">Caleb</span>
           </div>
           <div onClick={toggleDropdown}>
-            <MdOutlineMenu name="menu" className="flex text-white bg-red text-3xl" />
+            <MdOutlineMenu
+              name="menu"
+              className="flex text-white bg-red text-3xl"
+            />
           </div>
         </div>
       </div>
       {showDropdown && (
         <div className="absolute bg-portfolioGray text-white rounded-lg px-10 py-4 mt-16 w-2/5 right-5 justify-center">
-        <a href="#home" onClick={() => scrollToSection('home')} className="block px-1 py-2">Home</a>
-        <a href="#about" onClick={() => scrollToSection('about')} className="block px-1 py-2">About</a>
-        <a href="#service" onClick={() => scrollToSection('service')} className="block px-1 py-2">Service</a>
-        <a href="#portfolio" onClick={() => scrollToSection('portfolio')} className="block px-1 py-2">Portfolio</a>
-        <a href="#resume" onClick={() => scrollToSection('resume')} className="block px-1 py-2">Resume</a>
-        <a href="#contact" onClick={() => scrollToSection('contact')} className="block px-1 py-2">Contact</a>
-      </div>
+          <a
+            href="#home"
+            onClick={() => scrollToSection("home")}
+            className="block px-1 py-2"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            onClick={() => scrollToSection("about")}
+            className="block px-1 py-2"
+          >
+            About
+          </a>
+          <a
+            href="#service"
+            onClick={() => scrollToSection("service")}
+            className="block px-1 py-2"
+          >
+            Service
+          </a>
+          <a
+            href="#portfolio"
+            onClick={() => scrollToSection("portfolio")}
+            className="block px-1 py-2"
+          >
+            Portfolio
+          </a>
+          <a
+            href="#resume"
+            onClick={() => scrollToSection("resume")}
+            className="block px-1 py-2"
+          >
+            Resume
+          </a>
+          <a
+            href="#contact"
+            onClick={() => scrollToSection("contact")}
+            className="block px-1 py-2"
+          >
+            Contact
+          </a>
+        </div>
       )}
     </div>
   );
 };
 
 export default MobileNav;
-
