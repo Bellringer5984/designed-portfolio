@@ -27,7 +27,7 @@ const Portfolio = () => {
       title: "Download Sorter",
       description:
         "A script that organizes your downloads folder by creating sub-directories (images, videos, documentes, executables) and sorts files into them",
-      image: "/python2.png",
+      image: "/PythonLogo.png",
       link: "https://github.com/Bellringer5984/download_sorting",
     },
   ];
@@ -46,12 +46,14 @@ const Portfolio = () => {
           >
             <h3 className="text-xl font-semibold">{project.title}</h3>
             <p className="text-lg">{project.description}</p>
-            <div className="w-full h-40 bg-orange-600 rounded-lg my-4 overflow-hidden">
+            <div className="w-full h-100 bg-orange-600 rounded-lg my-4 overflow-hidden">
               <Image
                 src={project.image}
                 width={600}
                 height={400}
                 alt={project.description}
+                layout="fixed"
+                objectPosition="center"
               />
             </div>
             <a href={project.link} className="text-orange-500 hover:underline">
