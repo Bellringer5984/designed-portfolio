@@ -20,7 +20,7 @@ const Portfolio = () => {
     {
       title: "TrelloAI",
       description:
-        "A trello clone that implement openai api to have chatGPT summarize your day",
+        "A trello clone that implements openAI api to have chatGPT summarize your day",
       image: "/TrelloAI.png",
       link: "https://github.com/Bellringer5984/trello_clone",
     },

@@ -15,7 +15,7 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
       <div className="relative top-20 mx-auto p-5 border w-11/12 md:max-w-2xl shadow-lg rounded-md bg-white" onClick={(e) => e.stopPropagation()}>
         <div className="mt-3 text-center">
           <h3 className="text-lg leading-6 font-medium text-gray-900 mb-4">My Resume</h3>
-          <Image src="/Resume.svg" alt="Caleb's Resume" width={1000} height={1400} layout="intrinsic" />
+          <Image src="/Resume2.svg" alt="Caleb's Resume" width={1000} height={1400} layout="intrinsic" />
           <div className="mt-4">
             <button onClick={onClose} className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 focus:outline-none focus:shadow-outline">
               Close

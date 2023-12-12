@@ -15,11 +15,10 @@ const About = () => {
         <div className="md:w-2/3 md:pl-10">
           <p className="text-lg">
             {/* Insert your biography or introduction here */}
-            Hello! I&apos;m Caleb, a passionate software developer with a knack for
+            Hello! I&apos;m Caleb Bellmyer, a passionate software developer with a knack for
             building engaging and efficient web applications. With a background
-            in Fullstack Academy and a diverse skill set in JavaScript,
-            TypeScript, Python, and SQL, I am well-equipped to tackle
-            challenging projects and deliver high-quality solutions.
+            in Fullstack development and a diverse skill set in JavaScript,
+            TypeScript, Python, and SQL. I look for to discussing how I can help your company tackle their software development problems.
           </p>
           {/* Add more content or paragraphs as needed */}
         </div>
