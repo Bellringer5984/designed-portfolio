@@ -14,7 +14,7 @@ const About = () => {
         </div>
         <div className="md:w-2/3 md:pl-10">
           <p className="text-lg">
-            "Hello! I&apos;m Caleb Bellmyer, a dedicated software developer with
+            Hello! I&apos;m Caleb Bellmyer, a dedicated software developer with
             a strong focus on creating compelling and efficient web
             applications. My expertise in Fullstack development is bolstered by
             a versatile skill set in JavaScript, TypeScript, Python, and SQL. I
