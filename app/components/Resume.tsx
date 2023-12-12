@@ -1,15 +1,21 @@
 'use client'
-import ReactPDF from "@react-pdf/renderer";
-
+import React, { useState } from "react";
+import ResumeModal from "./ResumeModal";
 
 const Resume = () => {
-  return (
-    <section className="bg-black text-white rounded-lg p-10 my-10 mx-auto max-w-6xl">
-      <h2 className="text-2xl font-bold mb-6">Resume</h2>
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-      <div className="resume-pdf-container">
-        ReactPDF.render()
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  return (
+    <section id='resume' className="bg-black text-white rounded-lg my-10 mx-auto max-w-4xl">
+      <div className="pt-10 flex justify-center"> {/* Added padding-top here */}
+        <button onClick={openModal} className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 focus:outline-none focus:shadow-outline">
+          View My Resume
+        </button>
       </div>
+      <ResumeModal isOpen={isModalOpen} onClose={closeModal} />
     </section>
   );
 };

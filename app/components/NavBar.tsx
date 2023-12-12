@@ -19,7 +19,7 @@ const NavBar: React.FC = () => {
     }, []);
 
   return (
-    <div className="flex justify-center">
+    <div id="home" className="flex justify-center">
         {windowWidth >= 1000 ? <DesktopNav /> : <MobileNav />}
     </div>
   );

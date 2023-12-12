@@ -1,6 +1,13 @@
 import React from 'react'
 
 function DesktopNav() {
+
+  type SectionId = 'home' | 'about' | 'service' | 'portfolio' | 'resume' | 'contact';
+
+
+  const scrollToSection = (sectionId: SectionId) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+  };
     
   const lineItemClassName = "text-white px-10 hover:text-orange-500 transition-colors duration-300";
   return (
@@ -8,17 +15,17 @@ function DesktopNav() {
         
     <ol className="flex ">
       <li>
-        <a href="#" className={lineItemClassName}>
+        <a href="#home" onClick={() => scrollToSection('home')} className={lineItemClassName}>
           Home
         </a>
       </li>
       <li>
-        <a href="#" className={lineItemClassName}>
+        <a href="#about" onClick={() => scrollToSection('about')} className={lineItemClassName}>
           About
         </a>
       </li>
       <li>
-        <a href="#" className={lineItemClassName}>
+        <a href="#service" onClick={() => scrollToSection('service')} className={lineItemClassName}>
           Services
         </a>
       </li>
@@ -29,17 +36,17 @@ function DesktopNav() {
     </div>
     <ol className="flex">
       <li>
-        <a href="#" className={lineItemClassName}>
-          Resume
-        </a>
-      </li>
-      <li>
-        <a href="#" className={lineItemClassName}>
+        <a href="#portfolio" onClick={() => scrollToSection('portfolio')} className={lineItemClassName}>
           Portfolio
         </a>
       </li>
       <li>
-        <a href="#" className={lineItemClassName}>
+        <a href="#resume" onClick={() => scrollToSection('resume')} className={lineItemClassName}>
+          Resume
+        </a>
+      </li>
+      <li>
+        <a href="#contact" onClick={() => scrollToSection('contact')}className={lineItemClassName}>
           Contact
         </a>
       </li>
