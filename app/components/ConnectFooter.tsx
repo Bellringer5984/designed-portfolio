@@ -10,13 +10,13 @@ const ConnectFooter = () => {
         <p>You can reach me at: <a href="mailto:cjbellmyer5984@gmail.com" className="text-orange-500 hover:text-orange-600">cjbellmyer5984@gmail.com</a></p>
         <div className="flex justify-center mt-4">
           {/* Social Media Icons */}
-          <a href="https://linkedin.com/in/caleb-bellmyer" className="text-white mx-2 hover:text-orange-500">
+          <a href="https://linkedin.com/in/caleb-bellmyer" aria-label='Linkedin button' className="text-white mx-2 hover:text-orange-500">
             <FaLinkedin size={30} />
           </a>
-          <a href="https://github.com/Bellringer5984" className="text-white mx-2 hover:text-orange-500">
+          <a href="https://github.com/Bellringer5984" aria-label= 'Github button' className="text-white mx-2 hover:text-orange-500">
             <FaGithub size={30} />
           </a>
-          <a href="https://twitter.com/caleb_bellmyer" className="text-white mx-2 hover:text-orange-500">
+          <a href="https://twitter.com/caleb_bellmyer" aria-label='Twitter button' className="text-white mx-2 hover:text-orange-500">
             <FaXTwitter size={30} />
           </a>
         </div>

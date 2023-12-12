@@ -17,7 +17,7 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
           <h3 className="text-lg leading-6 font-medium text-gray-900 mb-4">My Resume</h3>
           <Image src="/Resume2.svg" alt="Caleb's Resume" width={1000} height={1400} layout="intrinsic" />
           <div className="mt-4">
-            <button onClick={onClose} className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 focus:outline-none focus:shadow-outline">
+            <button onClick={onClose} aria-label='Close modal' className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 focus:outline-none focus:shadow-outline">
               Close
             </button>
             <a href="/resumePDF.pdf" download className="text-orange-500 hover:text-orange-600 ml-4">

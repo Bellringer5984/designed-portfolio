@@ -2,11 +2,9 @@ import React from 'react';
 
 const Services = () => {
   const services = [
-    // Define your services here
     { title: 'Web Development', description: 'Building responsive and modern web applications using JavaScript, React, NextJS and more.' },
     { title: 'Backend Development', description: 'Developing robust server-side applications and APIs with Node.js and Python.' },
     { title: 'Database Management', description: 'Designing and managing efficient databases with SQL.' },
-    // Add more services as needed
   ];
 
   return (
