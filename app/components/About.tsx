@@ -19,7 +19,7 @@ const About = () => {
             applications. My expertise in Fullstack development is bolstered by
             a versatile skill set in JavaScript, TypeScript, Python, and SQL. I
             am eager to explore how my abilities can contribute to solving your
-            company's software development challenges.
+            company&apos;s software development challenges.
           </p>
         </div>
       </div>
